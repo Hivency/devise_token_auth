@@ -29,6 +29,7 @@ module DeviseTokenAuth::Concerns::ResourceFinder
   end
 
   def resource_class(m = nil)
+    byebug
     mapping = if m
                 Devise.mappings[m]
               else
